@@ -1,11 +1,18 @@
 {
-  "name": "wenye-swipe",
+  "name": "@wenye123/vue-swipe",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "description": "一个基于vue2.0的swipe库",
+  "main": "dist/swipe.js",
+  "files": [
+    "dist/swipe.css",
+    "dist/swipe.js"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lib": "vue-cli-service build --target lib ./src/components/index.ts --filename swipe && cp dist/swipe.umd.min.js dist/swipe.js",
+    "prepublish": "npm run lib"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -17,6 +24,7 @@
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "cz-conventional-changelog": "^3.3.0",
     "prettier": "^2.2.1",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
@@ -25,5 +33,10 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

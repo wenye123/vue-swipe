@@ -29,6 +29,22 @@
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wenye123/vue-swipe.git"
+  },
+  "keywords": [
+    "typescript",
+    "vue-swipe",
+    "vue2",
+    "vue",
+    "swipe"
+  ],
+  "author": "wenye <wenye2333@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/wenye123/vue-swipe/issues"
+  },
+  "homepage": "https://github.com/wenye123/vue-swipe",
   "browserslist": [
     "> 1%",
     "last 2 versions",

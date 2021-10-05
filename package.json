@@ -12,7 +12,9 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib ./src/components/index.ts --filename swipe && cp dist/swipe.umd.min.js dist/swipe.js",
-    "prepublishOnly": "npm run lib"
+    "prepublishOnly": "npm run lib",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "core-js": "^3.6.5",

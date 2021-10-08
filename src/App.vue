@@ -24,6 +24,8 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Swipe, SwipeItem } from "@/components/index";
+// const { Swipe, SwipeItem } = require("@wenye123/vue-swipe");
+// import "@wenye123/vue-swipe/dist/swipe.css";
 
 @Component({
   components: { Swipe, SwipeItem },

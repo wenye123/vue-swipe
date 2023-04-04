@@ -2,7 +2,7 @@
 
 #### demo
 
-![demo](https://cdn.wenye123.com/blog/20211008114535.png)
+![demo](https://cdn.wenye123.com/blog/202304042348200.png)
 
 #### script加载例子
 

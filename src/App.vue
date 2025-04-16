@@ -18,6 +18,12 @@
       <button @click="next">下一页</button>
       <button @click="redirectTo(3)">跳转到第四页</button>
     </div>
+
+    <ul class="m-list f-flex f-flex-wrap">
+      <li class="m-item" v-for="(item, index) in 100" :key="index">
+        {{ item }}
+      </li>
+    </ul>
   </div>
 </template>
 

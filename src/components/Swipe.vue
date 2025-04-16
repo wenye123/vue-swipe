@@ -12,8 +12,7 @@
           'background-color':
             currIndex === i ? indicatorActiveColor : indicatorColor,
         }"
-        @click="handleIndicatorClick(i)"
-      ></li>
+        @click="handleIndicatorClick(i)"></li>
     </ul>
   </div>
 </template>
@@ -247,12 +246,14 @@ export default class Swipe extends Vue {
     });
     // touchmove
     this.$refs.list.addEventListener("touchmove", (e) => {
-      // 阻止浏览器默认行为防止滑动影响到其他区域
-      e.preventDefault();
       // 标记为touch模式
       this.isTouch = true;
       // 获取移动距离
       this.touchMoveX = e.targetTouches[0].pageX - startX;
+      // 阻止浏览器默认行为防止滑动影响到其他区域
+      if (this.touchMoveX > 20) {
+        e.preventDefault();
+      }
       // 判断边界
       if (this.touchMoveX > 0 && this.currIndex === 0) {
         if (this.loop === true) {
